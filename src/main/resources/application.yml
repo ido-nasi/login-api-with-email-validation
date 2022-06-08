@@ -5,12 +5,11 @@ server:
 
 spring:
   datasource:
-    password: idopgs
+    password: ${POSTGRES_PASSWORD}
     url: jdbc:postgresql://localhost:5432/registration
-    username: postgres
+    username: ${POSTGRES_USER}
   jpa:
     hibernate:
-#      ddl-auto:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
