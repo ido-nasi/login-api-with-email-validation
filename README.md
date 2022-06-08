@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/101902014/172558340-bc69b8b9-f860-4342-9440-4c5fa43ee50a.png)
 
-#### sql code to create the the AppUser Database:
+#### sql code to create the the AppUser Table:
 ```sql
 create table app_user (
        id BIGSERIAL not null,
@@ -17,7 +17,7 @@ create table app_user (
     );
 ```
 
-#### sql code to create the the ConfirmationToken Database:
+#### sql code to create the the ConfirmationToken Table:
 ```sql
     create table confirmation_token (
        id BIGSERIAL not null,
