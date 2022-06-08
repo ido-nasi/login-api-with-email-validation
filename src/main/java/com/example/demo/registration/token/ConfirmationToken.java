@@ -16,13 +16,13 @@ public class ConfirmationToken {
 
     @Id
     @SequenceGenerator(
-            name = "confirmation_token_sequence",
-            sequenceName = "confirmation_token_sequence",
+            name = "confirmation_token_id_seq",
+            sequenceName = "confirmation_token_id_seq",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "confirmation_token_sequence"
+            generator = "confirmation_token_id_seq"
     )
     private Long id;
 

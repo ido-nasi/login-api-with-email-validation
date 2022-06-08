@@ -7,6 +7,7 @@ import com.example.demo.email.EmailSender;
 import com.example.demo.registration.token.ConfirmationToken;
 import com.example.demo.registration.token.ConfirmationTokenService;
 import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
@@ -67,7 +68,7 @@ public class RegistrationService {
         confirmationTokenService.setConfirmedAt(token);
         appUserService.enableAppUser(confirmationToken.getAppUser().getEmail());
 
-        return "confirmed";
+        return "confirmedPage.html";
     }
 
     private String buildEmail(String name, String link) {

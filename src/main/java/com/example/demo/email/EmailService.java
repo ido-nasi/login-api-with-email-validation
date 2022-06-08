@@ -30,8 +30,9 @@ public class EmailService implements EmailSender {
             helper.setText(email, true);
             helper.setTo(to);
             helper.setSubject("Confirm your email");
-            helper.setFrom("hello@amigoscode.com");
+            helper.setFrom(System.getenv("EMAIL_USERNAME"));
             javaMailSender.send(mimeMessage);
+            LOGGER.debug("message sent successfully");
         } catch (MessagingException e) {
             LOGGER.error("failed to send email", e);
             throw new IllegalStateException("failed to send email");
