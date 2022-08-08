@@ -1,4 +1,4 @@
 # login-api-with-email-validation
 
 #### Environment Variables - for yml config
-<p>To usee the current yml config, define environment variables your credentials in your configuration.</p>
+<p>To use the current yml config, set the environment variables of your email credentials in your run configuration.</p>
